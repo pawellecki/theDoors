@@ -1,0 +1,56 @@
+.dimension {
+  position: absolute;
+  bottom: -28px;
+  width: 100%;
+  height: 14px;
+  border-left: 2px solid #5a5858;
+  border-right: 2px solid #5a5858;
+}
+.dimension.isTop {
+  top: -24px;
+  bottom: auto;
+}
+.dimension.isHeight {
+  left: -36px;
+  bottom: 0;
+  height: calc(100% - 6px);
+  width: 14px;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid #5a5858;
+  border-bottom: 2px solid #5a5858;
+}
+
+.dimension::before {
+  content: "";
+  position: relative;
+  top: 6px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #5a5858;
+}
+.dimension.isHeight::before {
+  top: 0;
+  left: 6px;
+  width: 2px;
+  height: 100%;
+}
+
+.dimension .value {
+  position: relative;
+  top: -4px;
+  width: 38px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #5a5858;
+  background: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  color: #848c93;
+}
+.dimension.isHeight .value {
+  top: -50%;
+  margin-top: -50%;
+  left: -12px;
+}

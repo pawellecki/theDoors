@@ -1,0 +1,22 @@
+.notification {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #f24e33;
+  text-align: center;
+  color: #fff;
+  line-height: 80px;
+  z-index: 2;
+}
+.notification p {
+  display: inline-block;
+  width: calc(100% - 62px);
+  font-size: 16px;
+}
+.notification svg {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}

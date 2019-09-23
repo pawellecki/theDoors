@@ -1,0 +1,130 @@
+.door {
+  position: relative;
+  display: table;
+  margin: 15px auto;
+  height: 472px;
+}
+
+.door .view-wrapper {
+  position: relative;
+  float: left;
+  width: 590px;
+  height: 100%;
+  padding: 100px 100px 50px;
+  border: 1px solid #e6e6e6;
+}
+.door .view-wrapper > img {
+  display: none;
+}
+.door .view-wrapper.is3D {
+  overflow: hidden;
+}
+.door .view-wrapper.is3D > img {
+  position: absolute;
+  bottom: -20%;
+  right: -20%;
+  display: block;
+}
+
+.door .view-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.door .view {
+  position: absolute;
+  bottom: 70px;
+  display: inline-block;
+}
+
+.door .image-wrapper {
+  display: none;
+}
+.door .buttons-3D {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+}
+.door .is3D .image-wrapper {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.door .is3D .image-wrapper img {
+  position: absolute;
+  height: calc(100% - 10px);
+  bottom: 0;
+}
+
+.door .leaf {
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+}
+.door .leaf:last-child {
+  margin-right: 0;
+}
+
+.door .beams {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.door .beam {
+  width: calc(100% - 2px);
+  height: 7px;
+}
+
+.door .posts {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.door .post {
+  width: 7px;
+  height: 100%;
+}
+
+.door .params {
+  float: left;
+  width: 325px;
+  height: 100%;
+  padding: 17px 0 0 34px;
+}
+
+.door .navigation {
+  position: absolute;
+  bottom: 0;
+}
+.door .navigation::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.door .navigation > div {
+  float: left;
+  margin-right: 13px;
+}
+.door .navigation > div:last-child {
+  margin-right: 0;
+}
+
+@media all and (max-width: 939px) {
+  .door .view-wrapper {
+    float: none;
+  }
+  .door .params {
+    height: 80%;
+  }
+  .door .navigation {
+    bottom: -320px;
+  }
+}

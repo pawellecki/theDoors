@@ -1,0 +1,7 @@
+.app {
+  color: #727272;
+}
+.app * {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}

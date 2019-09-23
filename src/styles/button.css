@@ -1,0 +1,44 @@
+.button {
+  height: 48px;
+  width: 100%;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button.second {
+  width: 126px;
+  height: 31px;
+  border-radius: 0;
+  font-size: 14px;
+}
+.button.secondSmall {
+  float: left;
+  width: 36px;
+  height: 27px;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.button.third {
+  width: 36px;
+  height: 31px;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.button p {
+  line-height: 44px;
+}
+
+.button.second p {
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.button.secondSmall p {
+  line-height: 24px;
+  text-transform: uppercase;
+}

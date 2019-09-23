@@ -1,0 +1,73 @@
+.steps {
+  display: table;
+  margin: 22px auto;
+  position: relative;
+}
+.steps::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ebf7ff;
+  top: 22px;
+}
+.steps .circle {
+  position: relative;
+  margin: 0 auto;
+  width: 46px;
+  height: 46px;
+  background: #cddbe5;
+  border-radius: 50%;
+  z-index: 2;
+}
+.steps .isActive .circle {
+  background: #95a3ad;
+}
+.steps .circle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: 20px;
+  border-radius: 50%;
+  background: #6991b2;
+}
+.steps .isActive .circle::after {
+  background: #fff;
+}
+
+.steps .steps::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+}
+
+.steps .step {
+  position: relative;
+  display: inline-block;
+  height: 83px;
+  margin: 0 50px;
+  padding-bottom: 40px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.steps .step:first-child {
+  margin-left: 0;
+}
+.steps .step:last-child {
+  margin-right: 0;
+}
+
+.steps .step p {
+  position: absolute;
+  display: table;
+  white-space: pre;
+  bottom: -2px;
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
+.steps .step p:first-of-type {
+  bottom: 14px;
+}

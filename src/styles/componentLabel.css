@@ -1,0 +1,27 @@
+.component-label {
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.component-label::after {
+  /* content: "";
+  border-bottom: 1px solid #f7f7f7; */
+}
+
+.component-label .label {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  color: #848c93;
+}
+
+.component-label .label::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 1px;
+  width: 153px;
+  background: #f7f7f7;
+}

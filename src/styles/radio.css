@@ -1,0 +1,66 @@
+.radio::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.radio label::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.radio .color {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0 0 8px 7px;
+}
+
+.radio label {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+.radio.isInline label {
+  float: left;
+}
+
+.radio p {
+  float: left;
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #848c93;
+}
+.radio.isInline p {
+  width: 58px;
+}
+
+.radio input {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.radio span {
+  float: left;
+  width: 16px;
+  height: 16px;
+  background: #cddbe5;
+  border-radius: 50%;
+}
+
+.radio span::after {
+  content: "";
+  display: block;
+  margin: 3px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+}
+.radio span.isChecked::after {
+  background: #6991b2;
+}
